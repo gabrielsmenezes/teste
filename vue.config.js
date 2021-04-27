@@ -2,6 +2,6 @@
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/' + 'teste' + '/'
+    ? '/' + process.env.CI_PROJECT_NAME + '/'
     : '/'
 }
